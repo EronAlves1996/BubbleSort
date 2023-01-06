@@ -1,6 +1,6 @@
 def bubble_sort(array)
   array.each_with_index do |v, p|
-    for item in 0..(array.length - 1 - p)
+    for item in 0..(array.length - 2 - p)
       if array[item] > array[item + 1]
         tmp = array[item]
         array[item] = array[item + 1]
